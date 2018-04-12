@@ -5,7 +5,8 @@ import {Router, Route, IndexRoute, browserHistory} from 'react-router'
 
 const PARSE_APP_ID = 's6CWs4ntdmIZgrQ0MfDT02DgRKTp4q3InQHUA77U'
 const PARSE_JS_KEY = 'F9rFXoA9svREjJOfxoFedVUBdhqWQBOZtszuiEK4'
-Parse.initialize(PARSE_APP_ID, PARSE_JS_KEY)
+Parse.initialize('cryptonsignals', 'kayskjbfaevbfilquwebfsndfsjdfnsdkjnfkajdnfkad');
+Parse.serverURL = 'https://cryptonsignals.herokuapp.com/parse';
 
 /* Routes components */
 import App from './components/App'
