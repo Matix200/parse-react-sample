@@ -11,7 +11,7 @@ class TodoItem extends React.Component {
   render() {
     const todo = this.props.todo
     return (
-      <Link className='todo-item' to={`todo/${todo.id.objectId}`} replace>
+      <Link className='todo-item' to={`/todo/${todo.id.objectId}`}>
         <button className='state'
           onClick={this.onChangeState.bind(this)}>
           {todo.done ? <span className='done' /> : null}
