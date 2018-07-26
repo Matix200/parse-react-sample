@@ -26,6 +26,7 @@ ReactDOM.render((
       <Route path='login' component={Login}/>
       <IndexRoute onEnter={loginRequired} component={Todos}/>
       <Route path='/todo/:todoId' component={Todos}/>
+      <Route path='/todo/:todoId' component={Todos}/>
     </Route>
   </Router>
 ), document.getElementById('app'))
