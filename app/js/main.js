@@ -10,6 +10,7 @@ Parse.serverURL = 'https://cryptonsignals.herokuapp.com/parse'
 import App from './components/App'
 import Login from './components/Login'
 import Todos from './components/Todos/Todos'
+import HeaderNav from './components/HeaderNav/HeaderNav'
 
 // Style
 require('./../assets/styles/main.less')
@@ -26,6 +27,8 @@ ReactDOM.render((
       <Route path='login' component={Login}/>
       <IndexRoute onEnter={loginRequired} component={Todos}/>
       <Route path='/todo/:todoId' component={Todos}/>
+      <Route path='/header' component={HeaderNav}/>
+      
     </Route>
   </Router>
 ), document.getElementById('app'))
