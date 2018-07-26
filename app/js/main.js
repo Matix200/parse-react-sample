@@ -3,7 +3,7 @@ import Parse from 'parse'
 import ReactDOM from 'react-dom'
 import {Router, Route, IndexRoute, browserHistory} from 'react-router'
 
-Parse.initialize(process.env.ID);
+Parse.initialize(process.env.ID, process.env.JS_KEY);
 Parse.serverURL = process.env.URL;
 
 /* Routes components */
