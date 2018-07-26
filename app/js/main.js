@@ -3,8 +3,8 @@ import Parse from 'parse'
 import ReactDOM from 'react-dom'
 import {Router, Route, IndexRoute, browserHistory} from 'react-router'
 
-Parse.initialize(process.env.ID, process.env.JS_KEY);
-Parse.serverURL = process.env.URL;
+Parse.initialize('cryptonsignals', 'sjkfbkbagrheilhjfgakebgafevdgkjaflsvdgkjav')
+Parse.serverURL = 'https://cryptonsignals.herokuapp.com/parse'
 
 /* Routes components */
 import App from './components/App'
