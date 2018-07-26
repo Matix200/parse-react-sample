@@ -21,7 +21,7 @@ class Login extends React.Component {
     const email = this.refs.emailInput.value
     const password = this.refs.passwordInput.value
     Parse.User.logIn(email, password).then(() => {
-      this.props.history.replace('/')
+      this.props.history.replace('/todo')
     }, (error) => {
       console.log(error)
     })
